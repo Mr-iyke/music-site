@@ -472,8 +472,9 @@ main {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 2rem 2em;
+    grid-template-columns: repeat(3, 84vw);
+    padding: 2rem 1.5em;
+    overflow-x: scroll;
   }
 
   .details {
@@ -532,8 +533,9 @@ main {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 2rem 2em;
+    grid-template-columns: repeat(3, 90vw);
+    padding: 2rem 1.5em;
+    overflow-x: scroll;
   }
 
   .details {
@@ -562,6 +564,14 @@ main {
   .music-data .label {
     font-size: xx-small;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 90vw);
+    padding: 2rem 1.5em;
+    overflow-x: scroll;
+  }
+
 
   .primary-links,
   .secondary-links {
@@ -639,6 +649,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 2em;
+    overflow-x: hidden;
   }
 
   .details {
@@ -699,6 +710,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 2em;
+    overflow-x: hidden;
   }
 
   .details {
@@ -754,6 +766,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 2em;
+    overflow-x: hidden;
   }
 
   .details {
@@ -809,6 +822,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 2em;
+    overflow-x: hidden;
   }
 
   .details {
