@@ -1,0 +1,56 @@
+:root {
+  --theme-color: rgb(19, 18, 18);
+  --opacity: 0.7;
+  --opacity-small: 0.7;
+  --theme-color-opacity: rgb(19, 18, 18, var(--opacity));
+  --theme-color-opacity-small: rgb(19, 18, 18, var(--opacity-small));
+  --pri-color: green;
+  --pri-color-opacity: rgba(0, 128, 0, var(--opacity));
+  --text-color: whitesmoke;
+  --spacing: 2em;
+  --spacing-small: 0.7em;
+  --rounded: 5px;
+  --medium-breakpoint: 500px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.music-data {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  position: relative;
+}
+
+.image-box {
+  position: relative;
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 320px) {
+  section ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing);
+    gap: 2em;
+    padding: 1em 1em;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  section ul {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing);
+  }
+}

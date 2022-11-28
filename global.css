@@ -1,0 +1,249 @@
+:root {
+  --theme-color: rgb(19, 18, 18);
+  --opacity: 0.7;
+  --opacity-small: 0.7;
+  --theme-color-opacity: rgb(19, 18, 18, var(--opacity));
+  --theme-color-opacity-small: rgb(19, 18, 18, var(--opacity-small));
+  --pri-color: green;
+  --pri-color-opacity: rgba(0, 128, 0, var(--opacity));
+  --text-color: whitesmoke;
+  --spacing: 2em;
+  --spacing-small: 0.7rem;
+  --rounded: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* a {
+  color: inherit;
+  color: inherit;
+  text-decoration: none;
+} */
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 0.5em;
+  background-color: green;
+  border-radius: 6px;
+  border: .9px solid whitesmoke;
+}
+
+.navlink {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.navbar li {
+  color: whitesmoke;
+  padding: 1em 2em;
+  transition: 200ms;
+}
+
+.navbar li:hover {
+  background-color: whitesmoke;
+  color: green;
+}
+
+footer {
+  background: linear-gradient(to right, green, whitesmoke, green);
+  height: 35px;
+  color: whitesmoke;
+  padding: 0.55em 0 0 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 162px) {
+  .bar {
+    height: 20px;
+    width: 60%;
+  }
+
+  .nav-btn {
+    width: 45px;
+    height: 25px;
+    bottom: 18px;
+  }
+}
+
+
+@media screen and (max-width: 599px) {
+  .nav-btn {
+    border: 1px solid var(--text-color);
+    box-shadow: 1px 1px 20px 5px var(--theme-color-opacity);
+    background-color: var(--pri-color-opacity);
+    width: 60px;
+    height: 40px;
+    border-radius: var(--rounded);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-small);
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .navbar {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--theme-color-opacity);
+    padding: 0 var(--spacing-small);
+    z-index: 1;
+    display: none;
+  }
+
+  .nav-btn:active {
+    background-color: var(--pri-color);
+  }
+
+  .bar {
+    height: 2px;
+    width: 80%;
+    background-color: var(--text-color);
+  }
+}
+
+@media screen and (min-width: 600px) {
+.navbar {
+  bottom: 45px;
+}
+
+  .navlink {
+    font-size: xx-small;
+  }
+
+  .navbar li {
+    color: whitesmoke;
+    padding: 0.7em 1.3em;
+    transition: 200ms;
+  }
+
+  .navbar li:active {
+    background-color: whitesmoke;
+    color: green;
+  }
+}
+
+@media screen and (min-width: 700px) {
+.navbar {
+  bottom: 45px;
+}
+
+  .navlink {
+    font-size: x-small;
+  }
+
+  .navbar li {
+    color: whitesmoke;
+    padding: 0.7em 1.7em;
+    transition: 200ms;
+  }
+
+  .navbar li:active {
+    background-color: whitesmoke;
+    color: green;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+.navbar {
+  bottom: 40px;
+}
+
+  .navlink {
+    font-size: .7rem;
+  }
+
+  .navbar li {
+    color: whitesmoke;
+    padding: .9em 3em;
+    transition: 200ms;
+  }
+
+  .navbar li:active {
+    background-color: whitesmoke;
+    color: green;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+.navbar {
+  bottom: 40px;
+}
+
+  .navlink {
+    font-size: .9rem;
+  }
+
+  .navbar li {
+    color: whitesmoke;
+    padding: 1em 4em;
+    transition: 200ms;
+  }
+
+  .navbar li:active {
+    background-color: whitesmoke;
+    color: green;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+.navbar {
+  bottom: 40px;
+}
+
+  .navlink {
+    font-size: .9rem;
+  }
+
+  .navbar li {
+    color: whitesmoke;
+    padding: 1em 7em;
+    transition: 200ms;
+  }
+
+  .navbar li:active {
+    background-color: whitesmoke;
+    color: green;
+  }
+}

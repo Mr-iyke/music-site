@@ -1,0 +1,821 @@
+@font-face {
+  font-family: cooperheavy;
+  src: url(../font/cooper-hewitt.heavy.otf);
+}
+
+@font-face {
+  font-family: cooper;
+  src: url(../font/cooper-hewitt.thin.otf);
+}
+
+* {
+  padding-left: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*.hero {
+  background-image: url(./images/pexels-vishnu-r-nair-1105666.jpg);
+  background-size: cover; 
+
+}*/
+/* .navbar {
+  width: 100%;
+  position: fixed;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 0.5em;
+  background-color: green;
+  border-radius: 6px;
+  border: 1.2px solid whitesmoke;
+}
+
+.navlink {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.navbar li {
+  color: whitesmoke;
+  padding: 1em 2em;
+  transition: 200ms;
+}
+
+.navbar li:hover {
+  background-color: whitesmoke;
+  color: green;
+} */
+
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.4));
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-family: cooperheavy;
+  font-size: 10rem;
+  display: flex;
+  color: whitesmoke;
+  /* text-shadow: 5px 5px black, 5px 5px whitesmoke; */
+}
+
+.nja {
+  color: green;
+}
+
+.sic {
+  color: green;
+}
+
+.lead {
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  font-size: xx-large;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.cta {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.primary-links {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: whitesmoke;
+  background-color: green;
+  padding: 0.8em 1.5em;
+  border-radius: 0.3rem;
+  transition: 500ms;
+}
+
+.secondary-links {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: green;
+  background-color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 0.3rem;
+  transition: 500ms;
+}
+
+.primary-links:hover {
+  color: green;
+  background-color: whitesmoke;
+}
+
+.secondary-links:hover {
+  color: whitesmoke;
+  background-color: green;
+}
+
+.trending,
+.latest {
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  word-spacing: 3px;
+  font-weight: 1px;
+  color: green;
+  padding: 1em 0;
+  background: linear-gradient(to right, green, whitesmoke, green);
+}
+
+/* a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+} */
+main > section:nth-child(2) {
+  margin-bottom: 3.35em;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+  padding: 2rem 5em;
+  list-style-type: none;
+  color: whitesmoke;
+}
+
+.dot-box {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+.dot:hover {
+  background-color: rgb(119, 117, 117);
+}
+
+/* music-data section starts here */
+.music-data {
+  position: relative;
+  height: 40vh;
+  flex-basis: 400px;
+}
+
+.music-data .label {
+  list-style-type: none;
+  padding: 0.5em 0.5em;
+  border-bottom-right-radius: 10px;
+  background-color: green;
+  width: fit-content;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.music-data .label {
+  color: whitesmoke;
+}
+
+.details {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0 0 0.5em 0.5em;
+  background-image: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0)
+  );
+  transition: 300ms;
+}
+
+.song {
+  align-self: flex-end;
+}
+
+.details:hover {
+  text-decoration: underline;
+}
+
+/* music-data section ends here */
+main {
+  margin-bottom: 2em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 162px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+  }
+
+  .music-data {
+    position: relative;
+    height: 50vh;
+    flex-basis: 500px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 0.35rem;
+    margin-top: 0.01em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.8em;
+  }
+
+  .cta {
+    margin-top: 0.1em;
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.25rem;
+    padding: 1em 1.5em;
+    border-radius: 0.2rem;
+    transition: 500ms;
+  }
+
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.2rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 1.5em;
+  }
+
+  .details {
+    font-size: 0.4rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+
+  .music-data .label {
+    font-size: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .lead {
+    font-size: 0.7rem;
+  }
+
+  .cta {
+    margin-top: 0.6em;
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: .55rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: xx-small;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 84vw);
+    padding: 2rem 1.5em;
+    overflow-x: scroll;
+  }
+
+  .details {
+    font-size: 1.2rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+
+  .music-data .label {
+    font-size: x-small;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .lead {
+    font-size: 0.8rem;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.6rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.8rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 2em;
+  }
+
+  .details {
+    font-size: 1.3rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+
+  .music-data .label {
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.7rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 2em;
+  }
+
+  .details {
+    font-size: 1.3rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+
+  .music-data .label {
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .music-data .label {
+    font-size: xx-small;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.5rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.5rem;
+  }
+
+  .details {
+    font-size: 0.8rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.6rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 2em;
+  }
+
+  .details {
+    font-size: 1.1rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+
+  .music-data .label {
+    font-size: x-small;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  .lead {
+    font-size: 1.3rem;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.7rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:hover {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:hover {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 2em;
+  }
+
+  .details {
+    font-size: 1.2rem;
+  }
+
+  .music-data .label {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  .lead {
+    font-size: 1.3rem;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.7rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:hover {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:hover {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 2em;
+  }
+
+  .details {
+    font-size: 1.2rem;
+  }
+
+  .music-data .label {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.9rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:hover {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:hover {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 2em;
+  }
+
+  .details {
+    font-size: 1.6rem;
+  }
+
+  .music-data .label {
+    font-size: medium;
+  }
+}
