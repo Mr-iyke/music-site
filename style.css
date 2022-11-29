@@ -190,9 +190,10 @@ main > section:nth-child(2) {
   display: flex;
   justify-content: space-between;
   gap: 3em;
-  padding: 2rem 5em;
+  /* padding: 2rem 5em; */
   list-style-type: none;
   color: whitesmoke;
+  position: relative;
 }
 
 .dot-box {
@@ -203,10 +204,12 @@ main > section:nth-child(2) {
 }
 
 .dot {
-  width: 9px;
-  height: 9px;
-  background-color: whitesmoke;
+  width: 10px;
+  height: 10px;
+  /* background-color: whitesmoke; */
+  border: 1px solid whitesmoke;
   border-radius: 50%;
+  transition: 200ms;
 }
 
 .dot:hover {
@@ -242,6 +245,14 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+/* .image-link {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+} */
+
 .music-data .label {
   color: whitesmoke;
 }
@@ -282,49 +293,35 @@ main {
 
 /* media queries */
 
-@media screen and (max-width: 162px) {
-  .content {
+/* 162px screen starts here */
+@media screen and (min-width: 162px) {
+ .content {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    top: 0;
-  }
-
-  .music-data {
-    position: relative;
-    height: 50vh;
-    flex-basis: 500px;
-    margin: 0;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .lead {
-    font-size: 0.35rem;
-    margin-top: 0.01em;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0.8em;
+    font-size: 0.45rem;
   }
 
   .cta {
-    margin-top: 0.1em;
+    margin-top: 0.6em;
     display: flex;
     gap: 0.5em;
   }
 
   .primary-links,
   .secondary-links {
-    font-size: 0.25rem;
+    font-size: 0.35rem;
     padding: 1em 1.5em;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     transition: 500ms;
   }
 
@@ -340,17 +337,19 @@ main {
 
   .trending,
   .latest {
-    font-size: 0.2rem;
+    font-size: .4rem;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 2rem 1.5em;
+    grid-template-columns: repeat(3, 75vw);
+    padding: 1em 1em;
+    overflow-x: scroll;
+    gap: 1em;
   }
 
   .details {
-    font-size: 0.4rem;
+    font-size: .7rem;
     transition: 300ms;
   }
 
@@ -359,10 +358,34 @@ main {
   }
 
   .music-data .label {
-    font-size: 0.3rem;
+    font-size: .45rem;
   }
 }
 
+/* 290px screen starts here */
+@media screen and (min-width: 290px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 84vw);
+    padding: 2rem 1.5em;
+    overflow-x: scroll;
+  }
+
+  .details {
+    font-size: .9rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+
+  .music-data .label {
+    font-size: x-small;
+  }
+}
+
+/* 320px screen starts here */
 @media screen and (min-width: 320px) {
   .content {
     width: 100%;
@@ -373,11 +396,11 @@ main {
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .lead {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .cta {
@@ -388,7 +411,7 @@ main {
 
   .primary-links,
   .secondary-links {
-    font-size: .55rem;
+    font-size: 0.45rem;
     padding: 1em 1.5em;
     border-radius: 0.3rem;
     transition: 500ms;
@@ -417,7 +440,7 @@ main {
   }
 
   .details {
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 300ms;
   }
 
@@ -430,6 +453,8 @@ main {
   }
 }
 
+
+/* 400px screen starts here */
 @media screen and (min-width: 400px) {
   .content {
     width: 100%;
@@ -444,134 +469,8 @@ main {
   }
 
   .lead {
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
-
-  .primary-links,
-  .secondary-links {
-    font-size: 0.6rem;
-    padding: 1em 1.5em;
-    border-radius: 0.3rem;
-    transition: 500ms;
-  }
-
-  .primary-links:active {
-    color: green;
-    background-color: whitesmoke;
-  }
-
-  .secondary-links:active {
-    color: whitesmoke;
-    background-color: green;
-  }
-
-  .trending,
-  .latest {
-    font-size: 0.8rem;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 84vw);
-    padding: 2rem 1.5em;
-    overflow-x: scroll;
-  }
-
-  .details {
-    font-size: 1.3rem;
-    transition: 300ms;
-  }
-
-  .details:active {
-    text-decoration: underline;
-  }
-
-  .music-data .label {
-    font-size: small;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  h1 {
-    font-size: 5.5rem;
-  }
-
-  .lead {
-    font-size: 1rem;
-  }
-
-  .primary-links,
-  .secondary-links {
-    font-size: 0.7rem;
-    padding: 1em 1.5em;
-    border-radius: 0.3rem;
-    transition: 500ms;
-  }
-
-  .primary-links:active {
-    color: green;
-    background-color: whitesmoke;
-  }
-
-  .secondary-links:active {
-    color: whitesmoke;
-    background-color: green;
-  }
-
-  .trending,
-  .latest {
-    font-size: 0.9rem;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 90vw);
-    padding: 2rem 1.5em;
-    overflow-x: scroll;
-  }
-
-  .details {
-    font-size: 1.3rem;
-    transition: 300ms;
-  }
-
-  .details:active {
-    text-decoration: underline;
-  }
-
-  .music-data .label {
-    font-size: small;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  h1 {
-    font-size: 5rem;
-  }
-
-  .lead {
-    font-size: 1rem;
-  }
-
-  .music-data .label {
-    font-size: xx-small;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 90vw);
-    padding: 2rem 1.5em;
-    overflow-x: scroll;
-  }
-
 
   .primary-links,
   .secondary-links {
@@ -580,6 +479,7 @@ main {
     border-radius: 0.3rem;
     transition: 500ms;
   }
+
   .primary-links:active {
     color: green;
     background-color: whitesmoke;
@@ -592,68 +492,18 @@ main {
 
   .trending,
   .latest {
-    font-size: 0.5rem;
-  }
-
-  .details {
-    font-size: 0.8rem;
-    transition: 300ms;
-  }
-
-  .details:active {
-    text-decoration: underline;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  h1 {
-    font-size: 5.5rem;
-  }
-
-  .lead {
-    font-size: 1rem;
-  }
-
-  .primary-links,
-  .secondary-links {
     font-size: 0.6rem;
-    padding: 1em 1.5em;
-    border-radius: 0.3rem;
-    transition: 500ms;
-  }
-
-  .primary-links:active {
-    color: green;
-    background-color: whitesmoke;
-  }
-
-  .secondary-links:active {
-    color: whitesmoke;
-    background-color: green;
-  }
-
-  .trending,
-  .latest {
-    font-size: 0.9rem;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 2rem 2em;
-    overflow-x: hidden;
+    grid-template-columns: repeat(3, 45vw);
+    padding: 2rem 1.5em;
+    overflow-x: scroll;
   }
 
   .details {
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: 300ms;
   }
 
@@ -666,6 +516,184 @@ main {
   }
 }
 
+/* 500px screen starts here */
+@media screen and (min-width: 500px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  .lead {
+    font-size: .8rem;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.55rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.6rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 43vw);
+    padding: 2rem 1.5em;
+    overflow-x: scroll;
+  }
+
+  .details {
+    font-size: 1rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+
+  .music-data .label {
+    font-size: x-small;
+  }
+}
+
+/* 600px screen starts here */
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 4.3rem;
+  }
+
+  .lead {
+    font-size: .8rem;
+  }
+
+  .music-data .label {
+    font-size: x-small;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 45vw);
+    padding: 2rem 1.5em;
+    overflow-x: scroll;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.53rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.7rem;
+  }
+
+  .details {
+    font-size: 1rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+}
+
+/* 700px screen starts here */
+@media screen and (min-width: 700px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .lead {
+    font-size: .9rem;
+  }
+
+  .primary-links,
+  .secondary-links {
+    font-size: 0.55rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3rem;
+    transition: 500ms;
+  }
+
+  .primary-links:active {
+    color: green;
+    background-color: whitesmoke;
+  }
+
+  .secondary-links:active {
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .trending,
+  .latest {
+    font-size: 0.7rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 2em;
+    overflow-x: hidden;
+  }
+
+  .details {
+    font-size: 1rem;
+    transition: 300ms;
+  }
+
+  .details:active {
+    text-decoration: underline;
+  }
+
+  .music-data .label {
+    font-size: xx-small;
+  }
+}
+
+/* 1024px screen starts here */
 @media screen and (min-width: 1024px) {
   .content {
     width: 100%;
@@ -722,6 +750,7 @@ main {
   }
 }
 
+/* 1440px screen starts here */
 @media screen and (min-width: 1440px) {
   .content {
     width: 100%;
@@ -741,7 +770,7 @@ main {
 
   .primary-links,
   .secondary-links {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 1em 1.5em;
     border-radius: 0.3rem;
     transition: 500ms;
@@ -759,7 +788,7 @@ main {
 
   .trending,
   .latest {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .grid {
@@ -774,11 +803,12 @@ main {
   }
 
   .music-data .label {
-    font-size: 0.7rem;
+    font-size: smaller;
   }
 }
 
-@media screen and (min-width: 1440px) {
+/* 2560px screen starts here */
+@media screen and (min-width: 2560px) {
   .content {
     width: 100%;
     display: flex;
