@@ -50,7 +50,7 @@ body {
   gap: 0.5em;
   background-color: green;
   border-radius: 6px;
-  border: .9px solid whitesmoke;
+  border: 0.9px solid whitesmoke;
 }
 
 .navlink {
@@ -95,7 +95,6 @@ footer {
     bottom: 18px;
   }
 }
-
 
 @media screen and (max-width: 599px) {
   .nav-btn {
@@ -144,9 +143,9 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-.navbar {
-  bottom: 45px;
-}
+  .navbar {
+    bottom: 45px;
+  }
 
   .navlink {
     font-size: xx-small;
@@ -162,12 +161,16 @@ footer {
     background-color: whitesmoke;
     color: green;
   }
+
+  button {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 700px) {
-.navbar {
-  bottom: 45px;
-}
+  .navbar {
+    bottom: 45px;
+  }
 
   .navlink {
     font-size: x-small;
@@ -186,17 +189,17 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-.navbar {
-  bottom: 40px;
-}
+  .navbar {
+    bottom: 40px;
+  }
 
   .navlink {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .navbar li {
     color: whitesmoke;
-    padding: .9em 3em;
+    padding: 0.9em 3em;
     transition: 200ms;
   }
 
@@ -207,12 +210,12 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
-.navbar {
-  bottom: 40px;
-}
+  .navbar {
+    bottom: 40px;
+  }
 
   .navlink {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .navbar li {
@@ -228,12 +231,12 @@ footer {
 }
 
 @media screen and (min-width: 2560px) {
-.navbar {
-  bottom: 40px;
-}
+  .navbar {
+    bottom: 40px;
+  }
 
   .navlink {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .navbar li {
