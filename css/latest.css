@@ -68,7 +68,10 @@
 }
 
 .recent h2 {
-  background-color: green;
+  background-color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
   width: fit-content;
 }
 
