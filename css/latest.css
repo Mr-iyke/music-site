@@ -36,6 +36,10 @@
   /* border-right: 30px solid transparent; */
   height: 0;
   width: 180px;
+  width: 200px;
+  margin-left: 1.5em;
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
 }
 
 .late-music {
@@ -44,6 +48,13 @@
   font-family: "raleway", sans-serif;
   text-transform: uppercase;
   width: fit-content;
+  padding: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.music-sec {
+  margin-bottom: 4em;
 }
 
 .music-sec ul {
@@ -73,6 +84,7 @@
 }
 
 .recent h2 {
+  background-color: black;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -109,6 +121,45 @@ img {
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0)
   );
+}
+
+.next-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.next {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "poppins", sans-serif;
+  font-size: small;
+}
+
+@media screen and (min-width: 162px) {
+  .music-sec ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.6em;
+    padding: 0.5em 0.5em;
+  }
+
+  .late {
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid green;
+    height: 0;
+    width: 150px;
+    margin-left: 0.26em;
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .late-music {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0 1rem 10rem 0.8rem;
+  }
 }
 
 .next-div {
@@ -192,6 +243,10 @@ img {
     height: 0;
     width: 150px;
     margin-left: 0.55em;
+    border-bottom: 40px solid green;
+    height: 0;
+    width: 150px;
+    margin-left: 0.3em;
     margin-top: 0.6em;
     margin-bottom: 0.2em;
   }
@@ -233,6 +288,22 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.6em;
     padding: 0.5em 0.5em;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .music-sec ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6;
+    padding: 0.5em 0.5em;
+    /* margin-left: 1.5em; */
   }
 
   .late {
@@ -268,6 +339,82 @@ img {
     font-weight: 500;
     width: fit-content;
     padding: 0.6rem;
+    border-bottom: 45px solid green;
+    height: 0;
+    width: 175px;
+    margin-left: 0.3em;
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .late-music {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 1.3rem;
+  }
+
+  .music-sec {
+    flex-basis: 50%;
+  }
+
+  .recent {
+    flex-basis: 50%;
+  }
+
+  .recent header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .recent h2 {
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .music-sec ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6;
+    padding: 0.5em 0.5em;
+  }
+  
+  .music-sec {
+    flex-basis: 50%;
+    margin-left: 1.5em;
+  }
+
+  .music-data {
+    height: 30vh;
+    position: relative;
+    flex-basis: 1000px;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+
+  .late {
+    border-right: 25px solid transparent;
+    border-bottom: 45px solid green;
+    height: 0;
+    width: 200px;
+    margin-left: 1em;
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .late-music {
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
   }
 }
 
