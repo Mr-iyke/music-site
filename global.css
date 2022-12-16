@@ -34,7 +34,7 @@ body {
   color: var(--text-color);
 }
 
-.navbar {
+/* .navbar {
   width: 100%;
   position: fixed;
   bottom: 40px;
@@ -71,7 +71,7 @@ body {
 .navbar li:hover {
   background-color: whitesmoke;
   color: green;
-}
+} */
 
 footer {
   background: linear-gradient(to right, green, whitesmoke, green);
@@ -83,26 +83,13 @@ footer {
   font-size: 13px;
 }
 
-@media screen and (max-width: 162px) {
-  .bar {
-    height: 20px;
-    width: 60%;
-  }
-
-  .nav-btn {
-    width: 45px;
-    height: 25px;
-    bottom: 18px;
-  }
-}
-
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 162px) {
   .nav-btn {
     border: 1px solid var(--text-color);
     box-shadow: 1px 1px 20px 5px var(--theme-color-opacity);
     background-color: var(--pri-color-opacity);
-    width: 60px;
-    height: 40px;
+    width: 45px;
+    height: 30px;
     border-radius: var(--rounded);
     display: flex;
     flex-direction: column;
@@ -110,7 +97,7 @@ footer {
     align-items: center;
     padding: var(--spacing-small);
     position: fixed;
-    bottom: 40px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -142,14 +129,74 @@ footer {
   }
 }
 
-@media screen and (min-width: 600px) {
-  .navbar {
-    bottom: 45px;
+@media screen and (min-width: 320px) {
+  .bar {
+    height: 2px;
+    width: 80%;
   }
 
-  .navlink {
-    font-size: xx-small;
+  .nav-btn {
+    width: 60px;
+    height: 40px;
+    bottom: 40px;
+    bottom: 45px;
   }
+}
+
+@media screen and (min-width: 600px) {
+.navbar {
+ width: 100%;
+  position: fixed;
+  bottom: 45px;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  height: unset;
+  top: unset;
+  left: unset;
+  flex-direction: unset;
+  background-color: unset;
+  padding: unset;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 0.5em;
+  background-color: green;
+  border-radius: 6px;
+  border: 0.9px solid whitesmoke;
+}
+
+.navlink {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: xx-small;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+/* .navbar li {
+  color: whitesmoke;
+  padding: 1em 2em;
+  transition: 200ms;
+} */
+
+/* .navbar li:hover {
+  background-color: whitesmoke;
+  color: green;
+} */
+
+  
+  /* .navbar {
+    bottom: 45px;
+  } */
+
+  /* .navlink {
+    font-size: xx-small;
+  } */
 
   .navbar li {
     color: whitesmoke;
@@ -162,7 +209,7 @@ footer {
     color: green;
   }
 
-  button {
+  .nav-btn {
     display: none;
   }
 }
