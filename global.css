@@ -133,58 +133,58 @@ footer {
   .nav-btn {
     width: 60px;
     height: 40px;
-    bottom: 40px;
     bottom: 45px;
   }
 }
 
 @media screen and (min-width: 600px) {
-.navbar {
- width: 100%;
-  position: fixed;
-  bottom: 45px;
-  display: flex;
-  justify-content: center;
-  z-index: 99;
-  height: unset;
-  top: unset;
-  left: unset;
-  flex-direction: unset;
-  background-color: unset;
-  padding: unset;
-}
+  .navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    height: unset;
+    top: unset;
+    left: unset;
+    flex-direction: unset;
+    background-color: unset;
+    padding: unset;
+  }
 
-.navbar ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  gap: 0.5em;
-  background-color: green;
-  border-radius: 6px;
-  border: 0.9px solid whitesmoke;
-}
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 0.5em;
+    background-color: green;
+    border-radius: 6px;
+    border: 0.9px solid whitesmoke;
+  }
 
-.navlink {
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: xx-small;
-  text-transform: uppercase;
-  color: inherit;
-}
+  .navlink {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: inherit;
+    display: block;
+    padding: 2em 0.8em;
+  }
 
-/* .navbar li {
+  /* .navbar li {
   color: whitesmoke;
   padding: 1em 2em;
   transition: 200ms;
 } */
 
-/* .navbar li:hover {
+  /* .navbar li:hover {
   background-color: whitesmoke;
   color: green;
 } */
 
-  
   /* .navbar {
     bottom: 45px;
   } */
@@ -195,8 +195,8 @@ footer {
 
   .navbar li {
     color: whitesmoke;
-    padding: 0.7em 1.3em;
     transition: 200ms;
+    /* padding: 0; */
   }
 
   .navbar li:active {
@@ -215,12 +215,12 @@ footer {
   }
 
   .navlink {
-    font-size: x-small;
+    font-size: 0.55rem;
+    padding: 1.6em 0.8em;
   }
 
   .navbar li {
     color: whitesmoke;
-    padding: 0.7em 1.7em;
     transition: 200ms;
   }
 
@@ -236,12 +236,12 @@ footer {
   }
 
   .navlink {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    padding: 1.8em 1.7em;
   }
 
   .navbar li {
     color: whitesmoke;
-    padding: 0.9em 3em;
     transition: 200ms;
   }
 
@@ -252,17 +252,17 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
-  .navbar {
+ .navbar {
     bottom: 40px;
   }
 
   .navlink {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+    padding: 1.8em 1.7em;
   }
 
   .navbar li {
     color: whitesmoke;
-    padding: 1em 4em;
     transition: 200ms;
   }
 
@@ -278,12 +278,13 @@ footer {
   }
 
   .navlink {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
+    padding: 1.8em 1.7em;
   }
 
   .navbar li {
     color: whitesmoke;
-    padding: 1em 7em;
+    /* padding: 1em 7em; */
     transition: 200ms;
   }
 

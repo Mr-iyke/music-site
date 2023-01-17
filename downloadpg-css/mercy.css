@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 1.5em 0 1.5em 2em;
+}
+
+header h1 {
+  color: whitesmoke;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+header p {
+  color: rgb(190, 189, 189);
+  font-family: "raleway", sans-serif;
+  font-weight: 200;
+  font-size: x-small;
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+
+.music-sec {
+  margin: 0 0 2em 2em;
+}
+
+details {
+  margin: 0.5em 0 0 0.5em;
+  font-family: "poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 350;
+}
+
+summary {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.audio {
+  display: flex;
+  justify-content: center;
+}
+
+.music-sec .download {
+  color: green;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.recent header {
+  border-right: 25px solid transparent;
+  border-bottom: 40px solid black;
+  height: 0;
+  width: 180px;
+}
+
+.recent h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  width: fit-content;
+  padding: 0.7rem;
+}
+
+.recent ul {
+  margin: 0.8em 0 0 1em;
+}
+
+.recent ul > li {
+  padding-bottom: 0.6rem;
+}
+
+.recent-items {
+  font-family: "poppins", sans-serif;
+  font-size: small;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* media queries for 162px screen */
+
+@media screen and (min-width: 162px) {
+  header {
+    margin: 0.7em;
+  }
+
+  .music-sec {
+    margin: 0.7em;
+  }
+
+  header h1 {
+    font-size: x-small;
+  }
+
+  .header p {
+    font-size: 0.7rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  details {
+    margin: 0.5em 0 0 0.5em;
+    font-family: "poppins", sans-serif;
+    font-size: 0.3rem;
+    font-weight: 350;
+  }
+
+  summary {
+    font-weight: 400;
+    font-size: 0.6rem;
+  }
+
+  .audio {
+    margin-block: 0.8em;
+  }
+
+  .music-sec .download {
+    color: green;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+
+  .recent-page {
+    margin-left: 0.4em;
+    margin-bottom: 4em;
+    margin-top: 1em;
+  }
+
+  .recent-page :nth-child(2) > header {
+    width: 150px;
+  }
+
+  .recent header {
+    border-right: 25px solid transparent;
+    border-bottom: 30px solid black;
+    height: 0;
+    width: 140px;
+    margin: 0 0.4em 0 0;
+  }
+
+  .recent h2 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.45rem;
+  }
+
+  .recent {
+    margin-bottom: 0.6em;
+  }
+
+  .recent ul {
+    margin: 0.8em 0 0 1em;
+  }
+
+  .recent ul > li {
+    padding-bottom: 0.2rem;
+  }
+
+  .recent-items {
+    font-size: 0.6rem;
+  }
+}
+
+/* media queries for 320px screen */
+
+@media screen and (min-width: 320px) {
+  header h1 {
+    font-size: larger;
+  }
+
+  summary {
+    font-size: 0.8rem;
+  }
+
+  details {
+    font-size: 0.6rem;
+  }
+
+  .music-sec .download {
+    font-size: 0.8rem;
+  }
+
+  .recent-page {
+    margin-left: 0.8em;
+    margin-bottom: 4em;
+  }
+
+  .recent-page :nth-child(2) > header {
+    width: 163px;
+  }
+
+  .recent header {
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid black;
+    height: 0;
+    width: 147px;
+  }
+
+  .recent h2 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.65rem;
+  }
+
+  .recent-items {
+    font-size: 0.7rem;
+  }
+}
+
+/* media queries for 600px screen */
+
+@media screen and (min-width: 600px) {
+  .music-sec {
+    margin: 0 1em 0 1em;
+  }
+
+  header {
+    margin: 1em 0 1em 1.5em;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  details {
+    font-size: 0.7rem;
+  }
+
+  .recent-page {
+    margin-left: 1.4em;
+    margin-bottom: 4.5em;
+  }
+
+  .recent-page :nth-child(2) > header {
+    width: 170px;
+  }
+
+  .recent header {
+    width: 155px;
+  }
+
+  .recent h2 {
+    font-size: 0.9rem;
+    padding: 0.55rem;
+  }
+
+  .recent-items {
+    font-size: 0.75rem;
+  }
+}
+
+/* media queries for 768px screen */
+
+@media screen and (min-width: 768px) {
+  .recent-page :nth-child(2) > header {
+    width: 180px;
+  }
+
+  .recent header {
+    width: 168px;
+  }
+
+  .recent h2 {
+    font-size: 1rem;
+  }
+
+  .recent-items {
+    font-size: 0.9rem;
+  }
+}
+
+/* media queries for 1024px screen */
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: flex;
+  }
+
+  header h1 {
+    color: whitesmoke;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+
+  header p {
+    color: rgb(190, 189, 189);
+    font-family: "raleway", sans-serif;
+    font-weight: 200;
+    font-size: x-small;
+    margin-top: 1em;
+    text-transform: capitalize;
+  }
+
+  audio {
+    width: 60%;
+  }
+
+  .audio {
+    margin-block: 0.8em;
+  }
+
+  .music-sec {
+    flex-basis: 50%;
+    margin: 0 2em 4em 2em;
+  }
+
+  details {
+    margin: 0.5em 0 0 0.5em;
+    font-family: "poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 350;
+  }
+
+  summary {
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+
+  .music-sec .download {
+    color: green;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+  .recent-page {
+    flex-basis: 50%;
+    margin-top: 0;
+  }
+
+  .recent-page :nth-child(2) > header {
+    width: 165px;
+  }
+
+  .recent header {
+    border-right: 25px solid transparent;
+    border-bottom: 34px solid black;
+    height: 0;
+    width: 147px;
+  }
+
+  .recent h2 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.6rem;
+  }
+
+  .recent-items {
+    font-size: 0.8rem;
+  }
+
+  .recent ul > li {
+    padding-bottom: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+
+}
+
+
