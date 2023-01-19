@@ -32,6 +32,11 @@
 body {
   background-color: var(--theme-color);
   color: var(--text-color);
+ 
+}
+
+main {
+   min-height: 100vh;
 }
 
 .navbar h2 {

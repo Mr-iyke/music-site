@@ -1,5 +1,229 @@
+@font-face {
+  font-family: cooperheavy;
+  src: url(../font/cooper-hewitt.heavy.otf);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(../images/cover-art/pexels-jacob-von-bank-14715160.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container2 {
+  height: 100vh;
+  background-image: url(../images/cover-art/50abfdefe18c7a9769fd366667ca414c.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 100%;
+  max-width: 90vw;
+  margin: auto;
+  /* height: 50vh; */
+}
+
+.content > :first-child {
+  flex-basis: 70%;
+}
+
+.content > :last-child {
+  flex-basis: 30%;
+  /* object-fit: cover; */
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: cooperheavy;
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.whatsapp {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+}
+
+.whatsapp:hover {
+  color: white;
+}
+
+@media screen and (min-width: 162px) {
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    display: unset;
+    max-width: 90vw;
+    margin: auto;
+    min-height: 50vh;
+    border-radius: 0.6rem;
+  }
+
+  .content > :last-child {
+    border-radius: 0.6rem;
+    height: 60%;
+    flex-basis: unset;
+  }
+
+  .content > :last-child > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    flex-basis: unset;
+  }
+
+  .content > :first-child {
+    flex-basis: unset;
+    height: 40%;
+    padding: 0.5em;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.3rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 320px) {
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    display: unset;
+    max-width: 90vw;
+    margin: auto;
+    min-height: 50vh;
+    border-radius: 0.6rem;
+  }
+
+  .content > :last-child {
+    border-radius: 0.6rem;
+    height: 60%;
+    flex-basis: unset;
+  }
+
+  .content > :last-child > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    flex-basis: unset;
+  }
+
+  .content > :first-child {
+    flex-basis: unset;
+    height: 40%;
+    padding: 0.8em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .content > :first-child {
+    flex-basis: unset;
+    height: 40%;
+    padding: 0.4em 5em 0.4em 5em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .content > :first-child {
+    flex-basis: unset;
+    height: 40%;
+    padding: 0.7em 7em 0.3em 7em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: unset;
+  }
+
+  .content {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    min-height: unset;
+  }
+
+  .content > :first-child {
+    flex-basis: 70%;
+    height: unset;
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.7em 8em 0.7em 8em;
+  }
+
+  .content > :last-child {
+    flex-basis: 30%;
+    /* object-fit: cover; */
+    border-radius: 0.6rem;
+    height: unset;
+  }
+
+  h1 {
+    font-family: cooperheavy;
+    font-size: 3rem;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+  }
 }
