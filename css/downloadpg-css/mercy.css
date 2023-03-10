@@ -92,16 +92,16 @@ summary {
     margin: 0.7em;
   }
 
-  .music-sec {
-    margin: 0.7em;
-  }
-
   header h1 {
     font-size: x-small;
   }
 
   .header p {
     font-size: 0.7rem;
+  }
+  
+  .music-sec {
+    margin: 0.7em;
   }
 
   img {
@@ -373,9 +373,3 @@ summary {
     padding-bottom: 0.7rem;
   }
 }
-
-@media screen and (min-width: 2560px) {
-
-}
-
-

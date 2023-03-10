@@ -1,7 +1,7 @@
 :root {
   --theme-color: rgb(19, 18, 18);
   --opacity: 0.7;
-  --opacity-small: 0.7;
+  --opacity-small: 0.3;
   --theme-color-opacity: rgb(19, 18, 18, var(--opacity));
   --theme-color-opacity-small: rgb(19, 18, 18, var(--opacity-small));
   --pri-color: green;
@@ -32,11 +32,10 @@
 body {
   background-color: var(--theme-color);
   color: var(--text-color);
- 
 }
 
 main {
-   min-height: 100vh;
+  min-height: 100vh;
 }
 
 .navbar h2 {
@@ -88,19 +87,29 @@ footer {
     border: 1px solid var(--text-color);
     box-shadow: 1px 1px 20px 5px var(--theme-color-opacity);
     background-color: var(--pri-color-opacity);
-    width: 45px;
-    height: 30px;
     border-radius: var(--rounded);
     display: flex;
+    width: 45px;
+    height: 30px;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: var(--spacing-small);
     position: fixed;
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 100;
+  }
+
+  .nav-btn:active {
+    background-color: var(--pri-color);
+  }
+
+  .bar {
+    height: 2px;
+    width: 80%;
+    background-color: var(--text-color);
   }
 
   .navbar {
@@ -114,18 +123,36 @@ footer {
     justify-content: center;
     background-color: var(--theme-color-opacity);
     padding: 0 var(--spacing-small);
-    z-index: 1;
+    z-index: 90;
     display: none;
   }
 
-  .nav-btn:active {
-    background-color: var(--pri-color);
+  .navbar ul {
+    text-align: center;
+    list-style-type: none;
+    background-color: green;
+    border-radius: 6px;
+    border: 0.9px solid whitesmoke;
   }
 
-  .bar {
-    height: 2px;
-    width: 80%;
-    background-color: var(--text-color);
+  .navbar li {
+    color: whitesmoke;
+    padding: 1em 2em;
+    transition: 200ms;
+  }
+
+  .navbar li:active {
+    background-color: whitesmoke;
+    color: green;
+  }
+
+  .navlink {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: inherit;
   }
 }
 
@@ -166,7 +193,7 @@ footer {
     background-color: green;
     border-radius: 6px;
     border: 0.9px solid whitesmoke;
-  }
+}
 
   .navlink {
     text-decoration: none;
@@ -175,33 +202,33 @@ footer {
     font-size: 0.5rem;
     text-transform: uppercase;
     color: inherit;
-    display: block;
     padding: 2em 0.8em;
+    display: block;
   }
 
   /* .navbar li {
-  color: whitesmoke;
-  padding: 1em 2em;
-  transition: 200ms;
-} */
+    color: whitesmoke;
+    padding: 1em 2em;
+    transition: 200ms;
+  } */
 
   /* .navbar li:hover {
-  background-color: whitesmoke;
+    background-color: whitesmoke;
   color: green;
 } */
 
   /* .navbar {
-    bottom: 45px;
-  } */
+  bottom: 45px;
+} */
 
   /* .navlink {
-    font-size: xx-small;
-  } */
+  font-size: xx-small;
+} */
 
   .navbar li {
     color: whitesmoke;
     transition: 200ms;
-    /* padding: 0; */
+    padding: 0;
   }
 
   .navbar li:active {
@@ -242,7 +269,7 @@ footer {
 
   .navlink {
     font-size: 0.6rem;
-    padding: 1.8em 1.7em;
+    padding: 2em 1.7em;
   }
 
   .navbar li {
@@ -257,13 +284,13 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
- .navbar {
+  .navbar {
     bottom: 40px;
   }
 
   .navlink {
-    font-size: 0.6rem;
-    padding: 1.8em 1.7em;
+    font-size: 0.65rem;
+    padding: 2em 1.7em;
   }
 
   .navbar li {

@@ -9,16 +9,29 @@
   box-sizing: border-box;
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 100vw);
+  overflow-x: scroll;
+}
+
 .container {
   height: 100vh;
-  background-image: url(../images/cover-art/pexels-jacob-von-bank-14715160.jpg);
+  background-image: url(../../images/cover-art/pexels-jacob-von-bank-14715160.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .container2 {
   height: 100vh;
-  background-image: url(../images/cover-art/50abfdefe18c7a9769fd366667ca414c.webp);
+  background-image: url(../../images/cover-art/50abfdefe18c7a9769fd366667ca414c.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.container3 {
+  height: 100vh;
+  background-image: url(../../images/cover-art/c95bc387a62c701903360d947e7a4504.png);
   background-size: cover;
   background-position: center;
 }
