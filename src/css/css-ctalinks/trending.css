@@ -1,0 +1,573 @@
+ :root {
+  --theme-color: rgb(19, 18, 18);
+  --opacity: 0.7;
+  --opacity-small: 0.7;
+  --theme-color-opacity: rgb(19, 18, 18, var(--opacity));
+  --theme-color-opacity-small: rgb(19, 18, 18, var(--opacity-small));
+  --pri-color: green;
+  --pri-color-opacity: rgba(0, 128, 0, var(--opacity));
+  --text-color: whitesmoke;
+  --spacing: 2em;
+  --spacing-small: 0.7em;
+  --rounded: 5px;
+  --medium-breakpoint: 500px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .music-data {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+} */
+
+header {
+  margin: 1.5em 0 1.5em 2em;
+}
+
+header h1 {
+  color: whitesmoke;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+header p {
+  color: rgb(190, 189, 189);
+  font-family: "raleway", sans-serif;
+  font-weight: 200;
+  font-size: x-small;
+  text-transform: capitalize;
+}
+
+.late {
+  /* width: fit-content; */
+  /* background-color: green; */
+  /* border-bottom: 2px solid green;
+  padding: .5em;*/
+  border-right: 25px solid transparent;
+  border-bottom: 45px solid green;
+  /* border-top: 45px solid green; */
+  /* border-left: 30px solid transparent; */
+  /* border-right: 30px solid transparent; */
+  height: 0;
+  width: 180px;
+}
+
+.late-music {
+  font-weight: 500;
+  font-family: "raleway", sans-serif;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 1.6rem;
+  text-transform: uppercase;
+}
+
+.recent div {
+  border-right: 25px solid transparent;
+  border-bottom: 40px solid black;
+  height: 0;
+  width: 180px;
+}
+
+.recent h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  width: fit-content;
+  padding: 0.7rem;
+}
+
+.recent ul {
+  margin: 0.8em 0 0 1em;
+}
+
+.recent ul > li {
+  padding-bottom: 0.6rem;
+}
+
+.recent-items {
+  font-family: "poppins", sans-serif;
+  font-size: small;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.music-sec ul {
+  list-style-type: none;
+}
+
+.music-data {
+  position: relative;
+  flex-basis: 1px;
+  height: 20vh;
+}
+
+/* .image-box {
+  position: relative;
+} */
+
+/* .box {
+  width: 100%;
+  margin: 0 auto;
+} */
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song {
+  align-self: flex-end;
+}
+
+.details {
+  color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: 0 0 0.5em 0.5em;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  background-image: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.next-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.next {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "poppins", sans-serif;
+  font-size: small;
+}
+
+/* media queries for 162px screen */
+
+@media screen and (min-width: 162px) {
+  header {
+    margin: 0.7em 0 1em 0.7em;
+  }
+
+  header h1 {
+    font-size: small;
+  }
+
+  header p {
+    font-size: 0.45rem;
+  }
+
+  .music-sec {
+    margin-bottom: 0.9rem;
+  }
+
+  .music-sec ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.6em;
+    padding: 0.5em 0.5em;
+  }
+
+  .late {
+    border-right: 25px solid transparent;
+    border-bottom: 30px solid green;
+    height: 0;
+    width: 138px;
+    margin-left: 0.45em;
+  }
+
+  .music-sec :nth-child(2) > div {
+    width: 143px;
+  }
+
+  .movies {
+    margin-top: 1em;
+  }
+
+  .late-music {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    width: fit-content;
+  }
+
+  .details {
+    font-size: .7rem;
+  }
+
+  .recent-page {
+    margin-left: 0.4em;
+    margin-bottom: 4em;
+  }
+
+  .recent-page :nth-child(2) > div {
+    width: 150px;
+  }
+
+  .recent div {
+    border-right: 25px solid transparent;
+    border-bottom: 30px solid black;
+    height: 0;
+    width: 140px;
+  }
+
+  .recent h2 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.45rem;
+  }
+
+  .recent {
+    margin-bottom: 0.6em;
+  }
+
+  .recent ul {
+    margin: 0.8em 0 0 1em;
+  }
+
+  .recent ul > li {
+    padding-bottom: 0.2rem;
+  }
+
+  .recent-items {
+    font-size: 0.6rem;
+  }
+}
+
+/* media queries for 320px screen */
+
+@media screen and (min-width: 320px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.4rem;
+  }
+
+  .music-sec ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6em;
+    padding: 0.5em 0.5em;
+  }
+
+  .late {
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid green;
+    height: 0;
+    width: 147px;
+    margin-left: 0.5em;
+  }
+
+  .late-music {
+    font-size: 0.85rem;
+    padding: 0.65rem;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+
+  .recent-page {
+    margin-left: 0.45em;
+    margin-bottom: 4em;
+  }
+
+  .recent-page :nth-child(2) > div {
+    width: 163px;
+  }
+
+  .recent div {
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid black;
+    height: 0;
+    width: 147px;
+  }
+
+  .recent h2 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.65rem;
+  }
+
+  .recent-items {
+    font-size: 0.7rem;
+  }
+}
+
+/* media queries for 600px screen */
+@media screen and (min-width: 600px) {
+  header {
+    margin: 1em 0 1em 1.5em;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.5rem;
+  }
+
+  .music-sec {
+    margin: 0 1em 0 1em;
+  }
+
+  .late {
+    width: 160px;
+    margin-left: 0.6em;
+  }
+
+  .late-music {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.55rem;
+  }
+
+  .music-sec :nth-child(2) > div {
+    width: 165px;
+  }
+
+  .music-sec :nth-child(2) > div h2 {
+    padding: 0.57rem;
+  }
+
+  .recent-page {
+    margin-left: 1.4em;
+    margin-bottom: 4.5em;
+  }
+
+  .recent-page :nth-child(2) > div {
+    width: 170px;
+  }
+
+  .recent div {
+    width: 155px;
+  }
+
+  .recent h2 {
+    font-size: 0.9rem;
+    padding: 0.55rem;
+  }
+
+  .recent-items {
+    font-size: 0.75rem;
+  }
+}
+
+/* media queries for 650px screen */
+
+@media screen and (min-width: 650px) {
+  .music-sec {
+    flex-basis: 50%;
+    margin-bottom: 3.5rem;
+    margin-left: 0;
+  }
+
+  .music-sec ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6;
+    padding: 0.5em 0.5em;
+  }
+
+  .music-sec :nth-child(2) > div {
+    width: 141px;
+  }
+
+  .music-sec :nth-child(2) > div h2 {
+    padding: 0.58rem;
+  }
+
+  .late {
+    border-right: 25px solid transparent;
+    border-bottom: 32px solid green;
+    height: 0;
+    width: 133px;
+    margin-left: 0.5em;
+  }
+
+  header {
+    margin: 1em 0 1.5em 0.5em;
+  }
+
+  header p {
+    font-size: 0.5rem;
+  }
+
+  .late-music {
+    font-size: 0.8rem;
+    width: fit-content;
+    padding: 0.55rem;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .recent-page {
+    flex-basis: 50%;
+    margin-top: 2.8em;
+    margin-left: 0;
+  }
+
+  .recent-page :nth-child(2) > div {
+    width: 154px;
+  }
+
+  .recent div {
+    /* display: flex;
+    justify-content: center; */
+    width: 139px;
+    border-bottom: 32px solid black;
+  }
+
+  .recent h2 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.55rem;
+  }
+
+  .recent-items {
+    font-size: 0.65rem;
+  }
+}
+
+/* media queries for 700px screen */
+
+@media screen and (min-width: 700px) {
+  .late {
+    width: 143px;
+    margin-left: 0.55em;
+  }
+
+  .late-music {
+    font-size: 0.9rem;
+    width: fit-content;
+    padding: 0.49rem;
+  }
+
+  .music-sec :nth-child(2) > div {
+    width: 153px;
+  }
+
+  .music-sec :nth-child(2) > div h2 {
+    padding: 0.55rem;
+  }
+
+  .recent-page {
+    margin-left: 1.4em;
+  }
+
+  .recent div {
+    width: 140px;
+  }
+
+  .recent h2 {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .recent-items {
+    font-size: 0.65rem;
+  }
+}
+
+/* media queries for 1024px screen */
+
+@media screen and (min-width: 1024px) {
+  header h1 {
+    color: whitesmoke;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+  }
+
+  header p {
+    color: rgb(190, 189, 189);
+    font-family: "raleway", sans-serif;
+    font-weight: 200;
+    font-size: x-small;
+    margin-top: 0.5em;
+    text-transform: capitalize;
+  }
+
+  header {
+    margin: 0.8em 0 2.5em 2em;
+  }
+  .music-sec {
+    margin: 0 1.5em 4em 1.5em;
+  }
+
+  .late {
+    border-right: 25px solid transparent;
+    border-bottom: 38px solid green;
+    height: 0;
+    width: 168px;
+    margin-left: 0.55em;
+  }
+
+  .late-music {
+    font-size: 1rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.6rem;
+  }
+
+  .music-sec :nth-child(2) > div {
+    width: 168px;
+  }
+
+  .music-sec :nth-child(2) > div h2 {
+    padding: 0.6rem;
+  }
+
+  .recent-page :nth-child(2) > div {
+    width: 167px;
+  }
+
+  .recent div {
+    border-right: 25px solid transparent;
+    border-bottom: 34px solid black;
+    height: 0;
+    width: 147px;
+  }
+
+  .recent h2 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.6rem;
+  }
+
+  .recent-items {
+    font-size: 0.8rem;
+  }
+
+  .recent ul > li {
+    padding-bottom: 0.7rem;
+  }
+}

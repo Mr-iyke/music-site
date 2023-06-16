@@ -1,11 +1,11 @@
 @font-face {
   font-family: cooperheavy;
-  src: url(../font/cooper-hewitt.heavy.otf);
+  src: url(./font/cooper-hewitt.heavy.otf);
 }
 
 @font-face {
   font-family: cooper;
-  src: url(../font/cooper-hewitt.thin.otf);
+  src: url(./font/cooper-hewitt.thin.otf);
 }
 
 * {
@@ -114,7 +114,6 @@ video {
   text-align: center;
 }
 
-
 h1 {
   font-family: cooperheavy;
   font-size: 10rem;
@@ -206,6 +205,7 @@ h1 {
   font-size: 1.5rem;
   text-transform: capitalize;
 } */
+
 main > section:nth-child(4) {
   margin-bottom: 3.35em;
 }
@@ -246,7 +246,7 @@ main > section:nth-child(4) {
   flex-basis: 400px;
 }
 
-.music-data .label {
+.label {
   list-style-type: none;
   padding: 0.5em 0.5em;
   border-bottom-right-radius: 10px;
